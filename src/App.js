@@ -13,10 +13,10 @@ class App extends React.Component{
                 <Grid item xs={12}>
                     <Grid container spacing={16}>
                         <Grid item xs={12}>
-                            {/*Search Bar*/}
+                            <SearchBar/>
                         </Grid>
                         <Grid item xs={8}>
-                            {/*Current Video Detail*/}
+                            <VideoDetail/>
                         </Grid>
                         <Grid item xs={4}>
                             {/* Next Video List*/}
