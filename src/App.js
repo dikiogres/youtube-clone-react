@@ -8,7 +8,7 @@ import youtube from './api/youtube';
 
 class App extends React.Component{
     state = {
-        video: [],
+        videos: [],
         selectedVideo: null,
     }
     handleSubmit = async (searchTerm)=>{
@@ -29,7 +29,7 @@ class App extends React.Component{
     }   
 
     render(){
-        const{ selectedVideo } = this.state;
+        const{ selectedVideo,videos } = this.state;
         return(
             <Grid justifyContent="center" container spacing={10}>
                 <Grid item xs={12}>
@@ -41,7 +41,7 @@ class App extends React.Component{
                             <VideoDetail video={selectedVideo}/>
                         </Grid>
                         <Grid item xs={4}>
-                            <VideoList/>
+                            <VideoList videos={videos}/>
                         </Grid>
                     </Grid>
                 </Grid>
