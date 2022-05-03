@@ -41,7 +41,7 @@ class App extends React.Component{
                             <VideoDetail video={selectedVideo}/>
                         </Grid>
                         <Grid item xs={4}>
-                            {/* Next Video List*/}
+                            <VideoList/>
                         </Grid>
                     </Grid>
                 </Grid>
